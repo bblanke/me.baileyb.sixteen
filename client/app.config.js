@@ -1,8 +1,8 @@
 angular.module("blankenship")
   .config(function($mdThemingProvider) {
-    var themes = ["red", "pink", "purple", "deep-purple", "indigo", "blue", "light-blue", "cyan", "teal", "green", "light-green", "lime", "yellow", "amber", "orange", "deep-orange", "brown", "grey", "blue-grey"];
-    themes.sort( function() { return 0.5 - Math.random() } );
+    var themes = [["teal", "amber"], ["blue", "pink"], ["pink", "blue"], ["brown", "lime"], ["indigo", "deep-orange"], ["indigo", "red"], ["red", "blue"], ["blue-grey", "amber"], ["cyan", "yellow"]];
+    var index = Math.floor(Math.random() * (themes.length));
     $mdThemingProvider.theme('default')
-      .primaryPalette(themes[0])
-      .accentPalette(themes[1]);
+      .primaryPalette(themes[index][0])
+      .accentPalette(themes[index][1]);
     });

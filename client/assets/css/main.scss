@@ -9,3 +9,16 @@
     font-size: 14px;
   }
 }
+
+md-card{
+  .card-header{
+    height: 300px;
+    overflow: hidden;
+    img{
+      width:100%;
+      height: auto !important;
+      position: relative;
+      bottom: 50%;
+    }
+  }
+}

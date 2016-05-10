@@ -1,7 +1,9 @@
 <md-content layout="column" layout-fill>
-  <md-content layout="row" layout-align="center start">
-    <md-card>
-      <img ng-src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MOS6581_chtaube061229.jpg" class="md-card-image" alt="Washed Out">
+  <md-content layout="row" layout-align="center start" md-colors="{background: 'primary'}">
+    <md-card flex="60">
+      <div class="card-header">
+        <img ng-src="https://upload.wikimedia.org/wikipedia/commons/0/0f/MOS6581_chtaube061229.jpg" alt="Washed Out">
+      </div>
       <md-card-title>
         <md-card-title-text>
           <span class="md-headline">A Blog Post</span>
@@ -16,7 +18,10 @@
         </p>
       </md-card-content>
       <md-card-actions layout="row" layout-align="end center">
-        <md-button class="md-icon-button">
+        <md-button class="md-icon-button md-accent">
+          <md-icon>share</md-icon>
+        </md-button>
+        <md-button class="md-icon-button md-accent">
           <md-icon>link</md-icon>
         </md-button>
       </md-card-actions>

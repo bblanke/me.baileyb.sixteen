@@ -4,4 +4,13 @@
 .main-toolbar ._md-select-icon {
   font-size: 14px; }
 
+md-card .card-header {
+  height: 300px;
+  overflow: hidden; }
+  md-card .card-header img {
+    width: 100%;
+    height: auto !important;
+    position: relative;
+    bottom: 50%; }
+
 /*# sourceMappingURL=main.css.map */
