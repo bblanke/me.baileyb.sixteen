@@ -1,0 +1,11 @@
+/*Toolbar Section*/
+
+//Overwrite border on MD's dropdown
+.main-toolbar{
+  md-select-value{
+    border-width: 0px !important;
+  }
+  ._md-select-icon{
+    font-size: 14px;
+  }
+}
